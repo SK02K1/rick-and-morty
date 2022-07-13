@@ -45,7 +45,7 @@ export const Characters = () => {
           gap={4}
           w="full"
         >
-          {charactersListing}
+          {data?.characters && charactersListing}
         </Grid>
         {isPending && <Spinner />}
         {error && <Text>{error.message}</Text>}
